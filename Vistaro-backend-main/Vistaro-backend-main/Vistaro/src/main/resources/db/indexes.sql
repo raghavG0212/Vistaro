@@ -1,0 +1,16 @@
+CREATE INDEX idx_seat_slot ON Seat(slot_id);
+CREATE INDEX idx_food_slot ON Food(slot_id);
+CREATE INDEX idx_draft_user ON UserEventDraft(user_id);
+CREATE INDEX idx_draft_status ON UserEventDraft(approval_status);
+CREATE INDEX idx_booking_user ON Booking(user_id);
+CREATE INDEX idx_booking_event ON Booking(event_id);
+CREATE INDEX idx_booking_created ON Booking(created_at);
+CREATE UNIQUE INDEX idx_rating_user_event ON Rating(user_id, event_id);
+CREATE INDEX idx_rating_event ON Rating(event_id);
+CREATE INDEX idx_movie_event ON MovieDetails(event_id);
+CREATE INDEX idx_slot_event ON EventSlot(event_id);
+CREATE INDEX idx_slot_venue ON EventSlot(venue_id);
+CREATE INDEX idx_slot_start_end ON EventSlot(start_time, end_time);
+CREATE INDEX idx_event_category_city ON Event(category, sub_category);
+CREATE INDEX idx_event_start_end ON Event(start_time, end_time);
+CREATE INDEX idx_event_title ON Event(title);
