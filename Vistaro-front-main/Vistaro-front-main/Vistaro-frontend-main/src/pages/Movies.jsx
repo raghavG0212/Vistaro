@@ -222,7 +222,7 @@ export default function Movies() {
           Clear Filters
         </Box>
 
-        <Text fontSize="xs" color="gray.500">{display.length} results</Text>
+        <Text fontSize="xs" color="gray.500" marginTop="3">{display.length} results</Text>
 
       </Box>
 

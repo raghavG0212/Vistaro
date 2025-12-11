@@ -82,6 +82,7 @@ export default function HomeGeneralEvents() {
 				ssr
 				containerClass="carousel-container"
 				itemClass="carousel-item-padding-40-px"
+				slidesToSlide={4}
 			>
 				{events.map((e) => (
 					<Box

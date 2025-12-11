@@ -44,7 +44,7 @@ export default function HomeMainSlider() {
 	if (!events.length) return null;
 
 	return (
-		<Box width="100%" mt={4} borderRadius="lg" overflow="hidden">
+		<Box width="100%"  mt={4} borderRadius="lg" overflow="hidden">
 			<Carousel
 				responsive={responsive}
 				infinite
@@ -86,7 +86,7 @@ export default function HomeMainSlider() {
 							src={e.bannerUrl}
 							alt={e.title}
 							width="100%"
-							height="360px"
+							height="450px"
 							objectFit="cover"
 							objectPosition="center"
 						/>

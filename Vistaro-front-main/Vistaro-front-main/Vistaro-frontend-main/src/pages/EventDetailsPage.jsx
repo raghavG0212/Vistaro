@@ -266,8 +266,6 @@ export default function EventDetailsPage() {
 		});
 	}, [event]);
 
-	// ---- API Helpers ----
-
 	const fetchVenues = async () => {
 		try {
 			let res;
@@ -760,7 +758,7 @@ export default function EventDetailsPage() {
 									{event.title}
 								</Text>
 								{event.subCategory && (
-									<Badge colorScheme="purple" borderRadius="md">
+									<Badge colorScheme="purple" borderRadius="md" marginTop="2">
 										{event.subCategory}
 									</Badge>
 								)}
@@ -913,9 +911,9 @@ export default function EventDetailsPage() {
 										</Box>
 										<HStack spacing={3}>
 											<Button
-												variant="solid"
-												size="sm"
-												colorScheme="purple"
+												variant="subtle"
+												size="md"
+												color="green"
 												borderColor="purple.300"
 												onClick={() => {
 													if (showtimesRef.current) {

@@ -101,6 +101,7 @@ export default function HomeMovies({ category = "MOVIE" }) {
         arrows={true}
         containerClass="carousel-container"
         itemClass="carousel-item-padding-40-px"
+        slidesToSlide={4}
       >
         {events.map((e) => (
           <Box

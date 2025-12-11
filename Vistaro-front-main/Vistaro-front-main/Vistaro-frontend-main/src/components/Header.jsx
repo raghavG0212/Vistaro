@@ -233,9 +233,9 @@ export default function Header() {
 
 					<div className="hidden md:flex gap-6 text-gray-300 font-medium">
 						<Link to="/">Home</Link>
-						<Link to="/events">Events</Link>
-						<Link to="/sports">Sports</Link>
 						<Link to="/movies">Movies</Link>
+						<Link to="/sports">Sports</Link>
+						<Link to="/events">Events</Link>
 						<Link to="/offers">Offers</Link>
 						<Link to="/about">About</Link>
 					</div>
